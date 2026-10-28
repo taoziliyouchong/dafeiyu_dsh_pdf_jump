@@ -21,7 +21,7 @@ npm pack --dry-run
 
 ## 1. 建 GitHub 仓库
 
-- 公开仓库，名字用 `dsh_pdf_jump`；仓库名与 `package.json` 的包名 `dsh-pdf-jump` 可以不同，安装命令写 `github:taoziliyouchong/dsh_pdf_jump`。
+- 公开仓库，名字用 `dafeiyu_dsh_pdf_jump`；仓库名与 `package.json` 的包名 `dsh-pdf-jump` 可以不同，安装命令写 `github:taoziliyouchong/dafeiyu_dsh_pdf_jump`。
 - 推送本目录内容（`node_modules/`、`*.tgz` 已被 `.gitignore` 排除）。
 - 给仓库加 topic：`dsh-plugin`（收录检查会看）。
 - 仓库创建要满 1 天才能进目录（自动检查），当天建好、第二天再提 PR。
