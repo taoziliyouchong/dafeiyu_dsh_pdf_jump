@@ -9,7 +9,13 @@ Read local PDFs **inside the DSH sidebar**. One install ships two independent to
 
 Page numbers follow **PDF page order** (1 = first page of the file). The plugin deliberately does not infer the number printed in a footer: manuals often mix whole-book numbering with `chapter-page` numbering.
 
-![Viewer](assets/screenshot.png)
+![Page viewer](assets/screenshot-page.png)
+
+Jump by page number: type it in the toolbar; arrow keys flip pages.
+
+![Whole-document view](assets/screenshot-document.png)
+
+Whole-document view: thumbnails first, full size as each page scrolls into view, with a page box at the top.
 
 ## Install
 
