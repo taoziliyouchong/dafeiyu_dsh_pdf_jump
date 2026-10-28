@@ -1,7 +1,7 @@
 {
   "name": "dsh-pdf-jump",
   "version": "0.1.0",
-  "description": "Two PDF tools for the DSH sidebar in one install: open a PDF with DSH's native preview, or jump to any page and browse the whole document with locally rendered pages and thumbnails. Also registers a /pdf command.",
+  "description": "在 DSH 侧栏看本地 PDF：原生预览直接打开，或按页码跳页、整本浏览（先出缩略图，滚到哪页换高清）。一个包装两个工具，另带 /pdf 命令。",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -16,7 +16,7 @@
     "assets",
     "cordis.patch.yml",
     "README.md",
-    "README.zh.md",
+    "README.en.md",
     "LICENSE"
   ],
   "engines": {
