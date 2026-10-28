@@ -15,6 +15,12 @@ Page numbers follow **PDF page order** (1 = first page of the file). The plugin 
 dsh plugin --profile web add dsh-pdf-jump
 ```
 
+Before the package is on npm, install straight from GitHub:
+
+```sh
+dsh plugin --profile web add github:taoziliyouchong/dsh-pdf-jump
+```
+
 Then restart DSH. Replace `web` with your profile name if you use another one. The same package is listed in the community plugin market (awesome-dsh-plugin / dshmarket).
 
 After the restart a `/pdf` command is registered as well: `/pdf manual 300` returns the link without going through the model.

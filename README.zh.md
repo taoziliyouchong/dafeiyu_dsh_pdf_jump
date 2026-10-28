@@ -15,6 +15,12 @@
 dsh plugin --profile web add dsh-pdf-jump
 ```
 
+还没发布到 npm 时，直接从 GitHub 装：
+
+```sh
+dsh plugin --profile web add github:taoziliyouchong/dsh-pdf-jump
+```
+
 然后重启 DSH。用别的 profile 就把 `web` 换成你的 profile 名。同一个包也在社区插件市场（awesome-dsh-plugin / dshmarket）里。
 
 装好后除了两个工具，还会注册一个 `/pdf` 命令：`/pdf 繁易手册 300` 直接出链接，不经过模型判断。
