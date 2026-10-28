@@ -1,0 +1,55 @@
+{
+  "name": "dsh-pdf-jump",
+  "version": "0.1.0",
+  "description": "Two PDF tools for the DSH sidebar in one install: open a PDF with DSH's native preview, or jump to any page and browse the whole document with locally rendered pages and thumbnails. Also registers a /pdf command.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./native": "./native.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "native.js",
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.0.13",
+    "pdfjs-dist": "6.4.299"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pdf",
+    "viewer",
+    "page-number",
+    "manual"
+  ],
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoziliyouchong/dsh-pdf-jump"
+  },
+  "homepage": "https://github.com/taoziliyouchong/dsh-pdf-jump#readme",
+  "bugs": {
+    "url": "https://github.com/taoziliyouchong/dsh-pdf-jump/issues"
+  }
+}

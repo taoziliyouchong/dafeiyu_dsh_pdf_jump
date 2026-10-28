@@ -1,0 +1,9 @@
+# dsh-pdf-jump bundle patch：一个包装两个独立插件行。
+#   dsh-pdf-jump         — pdf-view：本地渲染页面（跳页 / 整本浏览）
+#   dsh-pdf-jump/native  — pdf-open：用 DSH 原生 PDF 预览打开（最快）
+# 安装：dsh plugin --profile web add dsh-pdf-jump
+- insert:
+    - id: dsh-pdf-jump
+      name: dsh-pdf-jump
+    - id: dsh-pdf-jump-native
+      name: dsh-pdf-jump/native
