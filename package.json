@@ -46,10 +46,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/taoziliyouchong/dafeiyu_dsh_pdf_jump"
+    "url": "https://github.com/taoziliyouchong/dsh_pdf_jump"
   },
-  "homepage": "https://github.com/taoziliyouchong/dafeiyu_dsh_pdf_jump#readme",
+  "homepage": "https://github.com/taoziliyouchong/dsh_pdf_jump#readme",
   "bugs": {
-    "url": "https://github.com/taoziliyouchong/dafeiyu_dsh_pdf_jump/issues"
+    "url": "https://github.com/taoziliyouchong/dsh_pdf_jump/issues"
   }
 }
