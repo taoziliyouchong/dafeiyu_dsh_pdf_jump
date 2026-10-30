@@ -1,7 +1,7 @@
 {
   "name": "dsh-pdf-jump",
-  "version": "0.1.1",
-  "description": "在 DSH 侧栏看本地 PDF：原生预览直接打开，或按页码跳页、整本浏览（先出缩略图，滚到哪页换高清）。一个包装两个工具，另带 /pdf 命令。",
+  "version": "0.1.2",
+  "description": "在 DSH 侧栏看本地 PDF：按页码跳页、整本浏览（缩略图先出、滚到哪页换高清），也可用原生预览直接打开。一个包装两个工具，另带 /pdf 命令。",
   "type": "module",
   "main": "index.js",
   "exports": {

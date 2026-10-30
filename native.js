@@ -56,8 +56,8 @@ export function apply(ctx, config = {}) {
     ctx.tools.register({
       name: 'pdf-open',
       description:
-        '在侧栏用 DSH 原生的 PDF 预览打开本地 PDF——客户端直接渲染，不生成图片、不起本地服务，是最快的打开方式；'
-        + '要按页码跳页、整本图片浏览时用 pdf-view。'
+        '在侧栏用 DSH 原生的 PDF 预览打开本地 PDF——客户端直接渲染，不生成图片、不起本地服务、有文字层；'
+        + '只在明确要原生预览时用；默认入口是 pdf-view（按页码跳页、整本浏览）。'
         + '打开 PDF 文件先过这个工具（或 pdf-view），不要自己拼 sidebar_open 路径——这里还要解析文件名片段和会话工作目录。'
         + 'file 给 PDF 路径或文件名片段（相对路径按会话工作目录解析）。返回文件路径，交给 sidebar_open 打开。',
       parameters,

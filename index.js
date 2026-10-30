@@ -23,7 +23,7 @@ const GUIDANCE = [
   '本机装了 dsh-pdf-jump（在侧栏里看 PDF，两个独立入口）：',
   '- 默认用 pdf-view（单页跳转模式）：带页码打开，页面带「上一页/下一页/跳页码/整本浏览」。用户只说「打开/看一眼某本 PDF」「打开第 N 页」也一律用它。',
   '- pdf-open 只在明确要求「原生预览、不生成图片、最快」时才用，不作为默认。',
-  '- 用户要提取 PDF 文字、读元数据或比较字体时，用 dsh-pdf 的 pdf_info / pdf_extract_text，不要用这两个工具。',
+  '- 用户要提取 PDF 文字、读元数据或比较字体时，用 dsh-pdf 插件（需另装）的 pdf_info / pdf_extract_text，不要用这两个工具。',
   '- 不要绕过这两个工具自己用 sidebar_open 打开 PDF 文件：那样没有跳页、没有整本浏览；pdf-open 返回的路径再交给 sidebar_open 才是正确顺序。',
   '- 两个工具都返回本机路径或本地 url：有 sidebar_open 就先调它开在侧栏；不要把裸路径/裸 url 贴给用户，用「📄 文件名」做链接文字。',
   '- 只给了文件名片段、不知道路径时直接传进去：先按会话工作目录找，再按片段搜。',
@@ -106,7 +106,7 @@ export function apply(ctx, config = {}) {
         name: 'pdf-view',
         description:
           '在侧栏里看本地 PDF（默认入口）：单页跳转模式，页面带「上一页/下一页/跳页码/整本浏览」；'
-          + '打开某本 PDF、翻到第 N 页、整本浏览都用它。pdf-open 只在明确要原生预览时用；要提取文字或元数据用 dsh-pdf 的 pdf_info / pdf_extract_text。'
+          + '打开某本 PDF、翻到第 N 页、整本浏览都用它。pdf-open 只在明确要原生预览时用；要提取文字或元数据用 dsh-pdf 插件（需另装）的 pdf_info / pdf_extract_text。'
           + '本地服务把该页渲染成图，返回带「上一页/下一页/跳页码/整本浏览」的侧栏网页地址。'
           + 'file 给 PDF 路径或文件名片段（相对路径按会话工作目录解析），page 给 PDF 页序（从 1 开始，不从页脚推断印刷页码）。'
           + '返回 url：有 sidebar_open 就交给它打开；不要把裸 url 贴给用户。首次调用自动拉起本地服务（只绑 127.0.0.1）。',
