@@ -26,7 +26,7 @@ dsh plugin --profile web add dsh-pdf-jump
 Before the package is on npm, install straight from GitHub:
 
 ```sh
-dsh plugin --profile web add github:taoziliyouchong/dafeiyu_dsh_pdf_jump
+dsh plugin --profile web add github:taoziliyouchong/dsh-pdf-jump
 ```
 
 Then restart DSH. Replace `web` with your profile name if you use another one.
